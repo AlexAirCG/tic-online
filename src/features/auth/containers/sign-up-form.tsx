@@ -7,6 +7,7 @@ import { BottomLink } from "../ui/link";
 import { ErrorMassage } from "../ui/submit-button copy";
 import { useActionState } from "@/shared/lib/react";
 import { signUpAction, SignUpFormState } from "../actions/sign-up";
+import { routes } from "@/kernel/routes";
 
 export function SignUpForm() {
   const [formState, action, isPending] = useActionState(
@@ -16,7 +17,7 @@ export function SignUpForm() {
 
   return (
     <AuthFormLayout
-      title="Sign-up"
+      title="Sign Up"
       description="Create your account to get started"
       action={action}
       fields={<AuthFields {...formState} />}
@@ -26,7 +27,7 @@ export function SignUpForm() {
         <BottomLink
           text="Already have an account?"
           linkText="Sign in"
-          url="/sign-in"
+          url={routes.signIn()}
         />
       }
     />
