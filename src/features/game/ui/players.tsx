@@ -8,10 +8,15 @@ export function GamePlayers({ game }: { game: GameDomain.GameEntity }) {
   return (
     <div className="flex flex-row justify-between">
       <div className="text-lg">
-        X - {firstPlayer.login}:{firstPlayer.reating}
+        X - {firstPlayer.login}
+        {": "}
+        {firstPlayer.reating}
       </div>
+      <div className="flex items-center">vs</div>
       <div className="text-lg">
-        O - {secondPlayer?.login ?? "..."}:{secondPlayer?.reating ?? "..."}
+        O - {secondPlayer?.login ?? "..."}
+        {": "}
+        {secondPlayer?.reating ?? "..."}
       </div>
     </div>
   );

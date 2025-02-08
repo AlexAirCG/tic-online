@@ -21,7 +21,10 @@ export function GameCard({
       <CardHeader>
         <CardTitle>Игра с {login}</CardTitle>
       </CardHeader>
-      <CardContent>Рейтинг: {reating}</CardContent>
+      <CardContent className="flex">
+        <div className="mr-3">Рейтинг:</div>
+        {reating}
+      </CardContent>
       <CardFooter>{actions}</CardFooter>
     </Card>
   );

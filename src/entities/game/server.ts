@@ -1,3 +1,4 @@
+export { gameEvents } from "./services/game-events";
 export { stepGame } from "./services/step-game";
 export { surenderGame } from "./services/surender-game";
 export { startGame } from "./services/start-game";

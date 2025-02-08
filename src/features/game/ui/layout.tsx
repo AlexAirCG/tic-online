@@ -13,7 +13,7 @@ export function GameLayout({
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Крестики нолики 3х3</CardTitle>
+        <CardTitle>Поле битвы</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {players}
